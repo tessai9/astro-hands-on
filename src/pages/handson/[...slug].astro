@@ -2,7 +2,7 @@
 import { CollectionEntry, getCollection } from 'astro:content';
 import HandsOn from '../../layouts/HandsOn.astro';
 
-export async function gethandsOnDocs() {
+export async function getStaticPaths() {
   const docs = await getCollection('handson');
   return docs.map(doc => ({
     params: { slug: doc.slug },

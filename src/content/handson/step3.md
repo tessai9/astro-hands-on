@@ -75,3 +75,9 @@ const todos = [
   </table>
 </BaseLayout>
 ```
+
+### 参考
+
+[Astro Component](https://docs.astro.build/ja/core-concepts/astro-components/)
+[Page](https://docs.astro.build/ja/core-concepts/astro-pages/)
+[Layout](https://docs.astro.build/ja/core-concepts/layouts/)

@@ -76,3 +76,7 @@ import { ToDos } from "../todos.ts"
   </table>
 </BaseLayout>
 ```
+
+### 参考
+
+[import](https://docs.astro.build/ja/guides/imports/)

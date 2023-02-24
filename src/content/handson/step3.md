@@ -38,5 +38,6 @@ import BaseLayout from "../layout/BaseLayout.astro"
 <BaseLayout>
   <h1>Astroハンズオン</h1>
   <hr>
+  <!-- ここにToDoリストを表示する -->
 </BaseLayout>
 ```

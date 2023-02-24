@@ -30,6 +30,8 @@ descripion: 'ページを作ってみよう！'
 
 `src/pages/`に`index.astro`を作成する
 
+ToDo部分は一旦ハードコードします
+
 ```
 ---
 // ここにTypeScriptが記述できます
@@ -38,6 +40,31 @@ import BaseLayout from "../layout/BaseLayout.astro"
 <BaseLayout>
   <h1>Astroハンズオン</h1>
   <hr>
-  <!-- ここにToDoリストを表示する -->
+  <table>
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>時間</th>
+        <th>やること</th>
+      </tr>
+    </theah>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>10:00〜</td>
+        <td>ヨガ</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>14:00〜</td>
+        <td>打ち合わせ@zoom</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>17:00〜</td>
+        <td>夕飯の買い物</td>
+      </tr>
+    </tbody>
+  </table>
 </BaseLayout>
 ```

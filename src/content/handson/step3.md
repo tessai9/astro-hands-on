@@ -36,6 +36,21 @@ ToDo部分は一旦ハードコードします
 ---
 // ここにTypeScriptが記述できます
 import BaseLayout from "../layout/BaseLayout.astro"
+
+const todos = [
+  {
+    time: '10:00〜',
+    content: 'ヨガ'
+  },
+  {
+    time: '14:00〜',
+    content: '打ち合わせ@zoom'
+  },
+  {
+    time: '17:00〜',
+    content: '夕飯の買い物'
+  }
+]
 ---
 <BaseLayout>
   <h1>Astroハンズオン</h1>
@@ -49,21 +64,13 @@ import BaseLayout from "../layout/BaseLayout.astro"
       </tr>
     </theah>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>10:00〜</td>
-        <td>ヨガ</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>14:00〜</td>
-        <td>打ち合わせ@zoom</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>17:00〜</td>
-        <td>夕飯の買い物</td>
-      </tr>
+      { todos.map((item, index) => (
+        <tr>
+          <td>{index + 1}</td>
+          <td>{item.time}</td>
+          <td>{item.content}</td>
+        </tr>
+      )) }
     </tbody>
   </table>
 </BaseLayout>

@@ -54,6 +54,7 @@ const ToDos = [
 ---
 import BaseLayout from "../layout/BaseLayout.astro"
 import ToDoItem from "../components/ToDoItem.astro"
+// todo.tsを呼び出すように変える
 import { ToDos } from "../todos.ts"
 ---
 <BaseLayout>
